@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="244" id="iaj-Lh-jaf" customClass="MyReviewCommentCell" customModule="GameReviewApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iaj-Lh-jaf" id="cdP-7K-EfH">
+                <rect key="frame" x="0.0" y="0.0" width="569" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nn3-Sp-f9V" userLabel="MainBackground">
+                        <rect key="frame" x="12" y="12" width="545" height="220"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf6-8u-bZs" userLabel="ShadowLayer" customClass="ShadowView" customModule="GameReviewApp" customModuleProvider="target">
+                        <rect key="frame" x="12" y="11" width="545" height="222"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyUserNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="358-iz-iEJ" userLabel="MyUserNameLabel">
+                                <rect key="frame" x="5" y="4" width="535" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-I8-GNB" userLabel="MyRatingView" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="5" y="25" width="535" height="172.5"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyCommentLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-TG-Ml9">
+                                <rect key="frame" x="5" y="197.5" width="535" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="h4d-TG-Ml9" firstAttribute="leading" secondItem="qf6-8u-bZs" secondAttribute="leading" constant="5" id="2Tn-Oj-Jyo"/>
+                            <constraint firstItem="fFo-I8-GNB" firstAttribute="top" secondItem="358-iz-iEJ" secondAttribute="bottom" id="Agr-r8-vWI"/>
+                            <constraint firstItem="358-iz-iEJ" firstAttribute="top" secondItem="qf6-8u-bZs" secondAttribute="top" constant="4" id="DBh-TP-wZ7"/>
+                            <constraint firstAttribute="bottom" secondItem="h4d-TG-Ml9" secondAttribute="bottom" constant="4" id="ETG-vf-lPr"/>
+                            <constraint firstAttribute="trailing" secondItem="fFo-I8-GNB" secondAttribute="trailing" constant="5" id="Uki-zl-76Q"/>
+                            <constraint firstAttribute="trailing" secondItem="h4d-TG-Ml9" secondAttribute="trailing" constant="5" id="cSS-iK-7a0"/>
+                            <constraint firstItem="fFo-I8-GNB" firstAttribute="leading" secondItem="qf6-8u-bZs" secondAttribute="leading" constant="5" id="r5A-aC-2Nb"/>
+                            <constraint firstItem="h4d-TG-Ml9" firstAttribute="top" secondItem="fFo-I8-GNB" secondAttribute="bottom" id="saD-DW-4NH"/>
+                            <constraint firstAttribute="trailing" secondItem="358-iz-iEJ" secondAttribute="trailing" constant="5" id="sfh-fs-9NI"/>
+                            <constraint firstItem="358-iz-iEJ" firstAttribute="leading" secondItem="qf6-8u-bZs" secondAttribute="leading" constant="5" id="xkk-Uh-5BB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nn3-Sp-f9V" firstAttribute="leading" secondItem="cdP-7K-EfH" secondAttribute="leading" constant="12" id="29e-dr-6Yh"/>
+                    <constraint firstItem="qf6-8u-bZs" firstAttribute="leading" secondItem="cdP-7K-EfH" secondAttribute="leading" constant="12" id="53d-11-bNd"/>
+                    <constraint firstItem="Nn3-Sp-f9V" firstAttribute="top" secondItem="cdP-7K-EfH" secondAttribute="top" constant="12" id="Kqi-Tf-whE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qf6-8u-bZs" secondAttribute="bottom" id="XgH-Fv-YZq"/>
+                    <constraint firstAttribute="bottom" secondItem="Nn3-Sp-f9V" secondAttribute="bottom" constant="12" id="azc-P8-23v"/>
+                    <constraint firstItem="qf6-8u-bZs" firstAttribute="top" secondItem="cdP-7K-EfH" secondAttribute="topMargin" id="dgi-YP-eIv"/>
+                    <constraint firstAttribute="trailing" secondItem="Nn3-Sp-f9V" secondAttribute="trailing" constant="12" id="j3Z-Cf-VsF"/>
+                    <constraint firstAttribute="trailing" secondItem="qf6-8u-bZs" secondAttribute="trailing" constant="12" id="wjc-XC-ih0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainBackgroundView" destination="Nn3-Sp-f9V" id="dI1-Ix-UC0"/>
+                <outlet property="myComment" destination="h4d-TG-Ml9" id="cNQ-TA-Dl4"/>
+                <outlet property="myRating" destination="fFo-I8-GNB" id="k3h-GZ-wqH"/>
+                <outlet property="myUserName" destination="358-iz-iEJ" id="AI8-op-UYp"/>
+            </connections>
+            <point key="canvasLocation" x="310.86956521739131" y="107.8125"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="fFo-I8-GNB">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+</document>

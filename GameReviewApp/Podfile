@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GameReviewApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+pod 'Alamofire', '~> 5.0.0-beta.5'
+pod 'SwiftyJSON', '~> 4.0'
+pod 'SDWebImage', '~> 5.0'
+pod 'Parchment', '~> 3.2'
+pod 'Cosmos', '~> 23.0'
+  # Pods for GameReviewApp
+
+# Add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+
+# For Analytics without IDFA collection capability, use this pod instead
+# pod ‘Firebase/AnalyticsWithoutAdIdSupport’
+
+# Add the pods for any other Firebase products you want to use in your app
+# For example, to use Firebase Authentication and Cloud Firestore
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+
+end
