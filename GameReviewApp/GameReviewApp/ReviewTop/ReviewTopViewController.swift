@@ -32,9 +32,9 @@ class ReviewTopViewController: UIViewController, UICollectionViewDataSource, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=PS4&booksGenreId=006&reviewAverage=standard&applicationId=1049332902612648324",gameHard: "PS4")
-        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=PS5&booksGenreId=006&reviewAverage=standard&applicationId=1049332902612648324",gameHard: "PS5")
-        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=Nintendo%20Switch&booksGenreId=006&reviewAverage=standard&applicationId=1049332902612648324",gameHard: "Switch")
+        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=PS4&booksGenreId=006&reviewAverage=standard&applicationId=APIキーの為秘匿",gameHard: "PS4")
+        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=PS5&booksGenreId=006&reviewAverage=standard&applicationId=APIキーの為秘匿",gameHard: "PS5")
+        getGameInfomation(url: "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&hardware=Nintendo%20Switch&booksGenreId=006&reviewAverage=standard&applicationId=APIキーの為秘匿",gameHard: "Switch")
 
         recommendCollectionView.delegate = self
         recommendCollectionView.dataSource = self

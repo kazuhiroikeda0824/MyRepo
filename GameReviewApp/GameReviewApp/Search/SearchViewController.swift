@@ -51,7 +51,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // 入力文字列をUTF8へデコードしてStringへ戻す
         let title = "&title=" + String(searchWord.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-        let myId = "&applicationId=1049332902612648324"
+        let myId = "&applicationId=APIキーの為秘匿"
         let baseurl = "https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&booksGenreId=006&"
         
         // URL整形
